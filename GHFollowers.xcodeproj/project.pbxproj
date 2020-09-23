@@ -15,7 +15,6 @@
 		410187F4251920F9002C402A /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410187F3251920F9002C402A /* String+Ext.swift */; };
 		410A17A124F1C77100DAD102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410A17A024F1C77100DAD102 /* AppDelegate.swift */; };
 		410A17A324F1C77100DAD102 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410A17A224F1C77100DAD102 /* SceneDelegate.swift */; };
-		410A17A524F1C77100DAD102 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410A17A424F1C77100DAD102 /* ViewController.swift */; };
 		410A17AA24F1C77200DAD102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 410A17A924F1C77200DAD102 /* Assets.xcassets */; };
 		410A17AD24F1C77200DAD102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 410A17AB24F1C77200DAD102 /* LaunchScreen.storyboard */; };
 		410A17B524F1CB5B00DAD102 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410A17B424F1CB5B00DAD102 /* SearchVC.swift */; };
@@ -52,7 +51,6 @@
 		410A179D24F1C77100DAD102 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		410A17A024F1C77100DAD102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		410A17A224F1C77100DAD102 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		410A17A424F1C77100DAD102 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		410A17A924F1C77200DAD102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		410A17AC24F1C77200DAD102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		410A17AE24F1C77200DAD102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -182,12 +180,11 @@
 		41800A0D251BDD41008E1932 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				410A17A424F1C77100DAD102 /* ViewController.swift */,
-				410A17C224F415A400DAD102 /* GFAlertVC.swift */,
 				410A17BC24F3FA0000DAD102 /* FollowerListVC.swift */,
+				410A17B624F1CB7900DAD102 /* FavoritesListVC.swift */,
 				410A17B424F1CB5B00DAD102 /* SearchVC.swift */,
 				410F65B4250FD1F600D83D06 /* UserInfoVC.swift */,
-				410A17B624F1CB7900DAD102 /* FavoritesListVC.swift */,
+				410A17C224F415A400DAD102 /* GFAlertVC.swift */,
 				410187E925191A97002C402A /* GFRepoItemVC.swift */,
 				410187EC25191C06002C402A /* GFFollowerItemVC.swift */,
 				410187E625191326002C402A /* GFItemInfoVC.swift */,
@@ -266,7 +263,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				410A17A524F1C77100DAD102 /* ViewController.swift in Sources */,
 				410A17B524F1CB5B00DAD102 /* SearchVC.swift in Sources */,
 				41BD0D3B251AA5010089D273 /* FavoritesCell.swift in Sources */,
 				410A17C724F41B2100DAD102 /* UIViewController+Ext.swift in Sources */,
