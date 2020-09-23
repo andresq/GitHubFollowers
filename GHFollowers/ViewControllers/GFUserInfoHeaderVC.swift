@@ -33,8 +33,6 @@ class GFUserInfoHeaderVC: UIViewController {
         addSubviews()
         layoutUI()
         configureUIElements()
-
-        
     }
     
     func configureUIElements() {
@@ -98,7 +96,4 @@ class GFUserInfoHeaderVC: UIViewController {
             
         ])
     }
-    
-
-
 }

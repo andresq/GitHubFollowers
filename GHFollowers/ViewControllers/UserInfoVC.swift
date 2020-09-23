@@ -25,19 +25,11 @@ class UserInfoVC: UIViewController {
     var username: String!
     weak var delegate: FollowerListVCDelegate!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
         configureViewController()
         layoutUI()
         getUserInfo()
-        
-        
-        
-        
     }
     
     func configureViewController() {
@@ -63,7 +55,6 @@ class UserInfoVC: UIViewController {
     }
     
     func configureUIElements(with user: User) {
-        
         let repoItemVC = GFRepoItemVC(user: user)
         repoItemVC.delegate = self
         
@@ -94,8 +85,6 @@ class UserInfoVC: UIViewController {
             ])
         }
         
-        
-        
         NSLayoutConstraint.activate([
             headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             headerView.heightAnchor.constraint(equalToConstant: 180),
@@ -123,12 +112,10 @@ class UserInfoVC: UIViewController {
     @objc func dismissVC() {
         dismiss(animated: true)
     }
-
-    
-
 }
 
 extension UserInfoVC: UserInfoVCDelegate {
+    
     func didTapGitHubProfile(for user: User) {
         guard let url = URL(string: user.htmlUrl) else {
             presentGFAlerOnMainThread(title: "Invalid URL", message: "The link attached to this user is invalid", buttonTitle: "Ok")
@@ -148,8 +135,4 @@ extension UserInfoVC: UserInfoVCDelegate {
         delegate.didRequestFollowers(for: user.login)
         dismissVC()
     }
-    
-    
-    
-    
 }

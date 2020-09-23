@@ -23,7 +23,6 @@ class GFAvatarImageView: UIImageView {
     }
     
     func configure() {
-        // Rounded corners
         layer.cornerRadius = 10
         clipsToBounds = true
         image = placeholderImage
@@ -31,7 +30,6 @@ class GFAvatarImageView: UIImageView {
     }
     
     func downloadImage(from urlString: String){
-        
         let cacheKey = NSString(string: urlString)
         
         // Uses cached image if exists
@@ -41,8 +39,6 @@ class GFAvatarImageView: UIImageView {
         }
         
         guard let url = URL(string: urlString) else { return }
-        
-        
         
         let task = URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
             guard let self = self else { return }
@@ -60,8 +56,6 @@ class GFAvatarImageView: UIImageView {
                 self.image = image
             }
         }
-        
         task.resume()
     }
-
 }

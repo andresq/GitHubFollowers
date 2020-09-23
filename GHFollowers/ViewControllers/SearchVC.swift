@@ -20,13 +20,10 @@ class SearchVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         view.backgroundColor = .systemBackground
-        
         configureLogoImageView()
         configureTextField()
         configureCallToActionButton()
-        
         createDismissKeyBoardTapGesture()
         
     }
@@ -46,8 +43,6 @@ class SearchVC: UIViewController {
             presentGFAlerOnMainThread(title: "Empty Username", message: "Please enter a username. We need to know who to look for 😀", buttonTitle: "Ok")
             return
         }
-
-        
         
         let followerListVC = FollowerListVC()
         followerListVC.username = usernameTextField.text
@@ -98,6 +93,7 @@ class SearchVC: UIViewController {
 }
 
 extension SearchVC: UITextFieldDelegate {
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         pushFollowerListVC()
         return true

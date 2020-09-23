@@ -163,8 +163,8 @@
 		41800A0C251BDD0C008E1932 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				410A17C024F4152400DAD102 /* GFBodyLabel.swift */,
 				41484CE7250003A800079CB1 /* GFAvatarImageView.swift */,
+				410A17C024F4152400DAD102 /* GFBodyLabel.swift */,
 				410F65BA250FDBCE00D83D06 /* GFSecondaryTitleLabel.swift */,
 				410A17BE24F4142400DAD102 /* GFTitleLabel.swift */,
 				410A17BA24F3F12200DAD102 /* GFTextField.swift */,

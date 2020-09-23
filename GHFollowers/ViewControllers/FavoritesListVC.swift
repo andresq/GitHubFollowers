@@ -12,8 +12,6 @@ class FavoritesListVC: UIViewController {
     
     let tableview = UITableView()
     var favorites: [Follower] = []
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,6 +63,7 @@ class FavoritesListVC: UIViewController {
 }
 
 extension FavoritesListVC: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return favorites.count
     }
@@ -86,7 +85,7 @@ extension FavoritesListVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        guard editingStyle == .delete else { return }
+        guard editingStyle == .delete else { return } // Swipe to delete mode
         
         let favorite = favorites[indexPath.row]
         favorites.remove(at: indexPath.row)

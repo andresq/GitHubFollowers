@@ -28,7 +28,6 @@ class FollowerCell: UICollectionViewCell {
         avatarImageView.downloadImage(from: follower.avatarUrl)
     }
     
-    
     func configure() {
         addSubview(avatarImageView)
         addSubview(usernameLabel)
@@ -45,5 +44,4 @@ class FollowerCell: UICollectionViewCell {
             usernameLabel.heightAnchor.constraint(equalToConstant: 20) // Should be bigger than font (16)
         ])
     }
-    
 }

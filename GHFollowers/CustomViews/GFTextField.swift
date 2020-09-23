@@ -31,9 +31,9 @@ class GFTextField: UITextField {
         textAlignment = .center
         font = UIFont.preferredFont(forTextStyle: .title2)
         
-        // I want the input to shrink to see the whole input on the line
+        // We want the input to shrink to see the whole input on the line
         adjustsFontSizeToFitWidth = true
-        // however, I want it to stop at size 12
+        // however, we want it to stop at size 12
         minimumFontSize = 12
         
         backgroundColor = .tertiarySystemBackground
@@ -41,5 +41,4 @@ class GFTextField: UITextField {
         
         placeholder = "Enter a username"
     }
-    
 }

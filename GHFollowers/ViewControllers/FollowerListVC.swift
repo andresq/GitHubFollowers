@@ -67,8 +67,6 @@ class FollowerListVC: UIViewController {
         navigationItem.searchController = searchController
     }
     
-    
-    // move to an extension
     func createThreeColumnFlowLayout() -> UICollectionViewFlowLayout {
         let width = view.bounds.width
         let padding: CGFloat = 12
@@ -104,7 +102,6 @@ class FollowerListVC: UIViewController {
                 }
                 
                 self.updateData(on: self.followers)
-                
             case .failure(let error):
                 self.presentGFAlerOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "OK")
             }
@@ -150,18 +147,15 @@ class FollowerListVC: UIViewController {
                     self.presentGFAlerOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "OK")
                     
                 }
-                
             case .failure(let error):
                 self.presentGFAlerOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "OK")
             }
         }
     }
-    
-    
-
 }
 
 extension FollowerListVC: UICollectionViewDelegate {
+    
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         let offsetY = scrollView.contentOffset.y
         let contentHeight = scrollView.contentSize.height
@@ -200,11 +194,10 @@ extension FollowerListVC: UISearchResultsUpdating, UISearchBarDelegate {
         isSearching = false
         updateData(on: followers)
     }
-    
-    
 }
 
 extension FollowerListVC: FollowerListVCDelegate {
+    
     func didRequestFollowers(for username: String) {
         self.username = username
         title = username

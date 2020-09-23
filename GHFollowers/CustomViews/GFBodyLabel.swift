@@ -33,5 +33,4 @@ class GFBodyLabel: UILabel {
         lineBreakMode = .byWordWrapping // overflow starts at new line
         translatesAutoresizingMaskIntoConstraints = false
     }
-
 }
