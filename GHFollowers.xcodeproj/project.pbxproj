@@ -94,6 +94,7 @@
 		410187EF251920B8002C402A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				410A17C624F41B2100DAD102 /* UIViewController+Ext.swift */,
 				410187F0251920D1002C402A /* Date+Ext.swift */,
 				410187F3251920F9002C402A /* String+Ext.swift */,
 			);
@@ -103,14 +104,6 @@
 		410A179424F1C77100DAD102 = {
 			isa = PBXGroup;
 			children = (
-				410A17C624F41B2100DAD102 /* UIViewController+Ext.swift */,
-				4125E8782506EBD800927707 /* GFEmptyStateView.swift */,
-				410A17B824F3EFBF00DAD102 /* GFButton.swift */,
-				410A17BA24F3F12200DAD102 /* GFTextField.swift */,
-				410A17BC24F3FA0000DAD102 /* FollowerListVC.swift */,
-				410A17BE24F4142400DAD102 /* GFTitleLabel.swift */,
-				410A17C024F4152400DAD102 /* GFBodyLabel.swift */,
-				410A17C224F415A400DAD102 /* GFAlertVC.swift */,
 				410A179F24F1C77100DAD102 /* GHFollowers */,
 				410A179E24F1C77100DAD102 /* Products */,
 			);
@@ -127,28 +120,17 @@
 		410A179F24F1C77100DAD102 /* GHFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				41800A0D251BDD41008E1932 /* ViewControllers */,
+				41800A0C251BDD0C008E1932 /* CustomViews */,
 				410187EF251920B8002C402A /* Extensions */,
 				414049E724F73D2A00C042C0 /* Utilities */,
 				414049E424F7347F00C042C0 /* Managers */,
 				410A17A024F1C77100DAD102 /* AppDelegate.swift */,
 				410A17A224F1C77100DAD102 /* SceneDelegate.swift */,
 				414049DF24F7300900C042C0 /* Model */,
-				410A17A424F1C77100DAD102 /* ViewController.swift */,
 				410A17A924F1C77200DAD102 /* Assets.xcassets */,
-				410A17B424F1CB5B00DAD102 /* SearchVC.swift */,
-				410A17B624F1CB7900DAD102 /* FavoritesListVC.swift */,
 				410A17AB24F1C77200DAD102 /* LaunchScreen.storyboard */,
 				410A17AE24F1C77200DAD102 /* Info.plist */,
-				41484CE52500034E00079CB1 /* FollowerCell.swift */,
-				41484CE7250003A800079CB1 /* GFAvatarImageView.swift */,
-				410F65B4250FD1F600D83D06 /* UserInfoVC.swift */,
-				410F65B8250FDBA900D83D06 /* GFUserInfoHeaderVC.swift */,
-				410F65BA250FDBCE00D83D06 /* GFSecondaryTitleLabel.swift */,
-				410187E325190EDD002C402A /* GFItemInfoView.swift */,
-				410187E625191326002C402A /* GFItemInfoVC.swift */,
-				410187E925191A97002C402A /* GFRepoItemVC.swift */,
-				410187EC25191C06002C402A /* GFFollowerItemVC.swift */,
-				41BD0D3A251AA5010089D273 /* FavoritesCell.swift */,
 			);
 			path = GHFollowers;
 			sourceTree = "<group>";
@@ -178,6 +160,40 @@
 				410F65BC250FE33100D83D06 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		41800A0C251BDD0C008E1932 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				410A17C024F4152400DAD102 /* GFBodyLabel.swift */,
+				41484CE7250003A800079CB1 /* GFAvatarImageView.swift */,
+				410F65BA250FDBCE00D83D06 /* GFSecondaryTitleLabel.swift */,
+				410A17BE24F4142400DAD102 /* GFTitleLabel.swift */,
+				410A17BA24F3F12200DAD102 /* GFTextField.swift */,
+				410A17B824F3EFBF00DAD102 /* GFButton.swift */,
+				410187E325190EDD002C402A /* GFItemInfoView.swift */,
+				4125E8782506EBD800927707 /* GFEmptyStateView.swift */,
+				41484CE52500034E00079CB1 /* FollowerCell.swift */,
+				41BD0D3A251AA5010089D273 /* FavoritesCell.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		41800A0D251BDD41008E1932 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				410A17A424F1C77100DAD102 /* ViewController.swift */,
+				410A17C224F415A400DAD102 /* GFAlertVC.swift */,
+				410A17BC24F3FA0000DAD102 /* FollowerListVC.swift */,
+				410A17B424F1CB5B00DAD102 /* SearchVC.swift */,
+				410F65B4250FD1F600D83D06 /* UserInfoVC.swift */,
+				410A17B624F1CB7900DAD102 /* FavoritesListVC.swift */,
+				410187E925191A97002C402A /* GFRepoItemVC.swift */,
+				410187EC25191C06002C402A /* GFFollowerItemVC.swift */,
+				410187E625191326002C402A /* GFItemInfoVC.swift */,
+				410F65B8250FDBA900D83D06 /* GFUserInfoHeaderVC.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
